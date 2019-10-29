@@ -3,6 +3,11 @@ pipeline{
 	stages{
 		stage("Start Grid"){
 			steps{
+				bat "docker pull anilcheepuru92/docker-selenium"
+			}
+		}
+		stage("Start Grid"){
+			steps{
 				bat "docker-compose up -d hub chrome firefox"
 			}
 		}
