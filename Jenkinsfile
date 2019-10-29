@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	stages{
-		stage("Start Grid"){
+		stage("Pull Latest Image"){
 			steps{
 				bat "docker pull anilcheepuru92/docker-selenium"
 			}
